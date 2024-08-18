@@ -111,17 +111,27 @@ body{
 }
 
 .line_T{
+  display: flex;
   border-style: dashed none none none;
   border-width: 1px;
   border-color: #1a63aa;
 }
 
 .line_TB{
+  display: flex;
   border-style: dashed none;
   border-width: 1px;
   border-color: #1a63aa;
 }
 
-.imgtypeA{
-  width: 100%;
+@media (max-width: 396px){
+  .table{
+    overflow-x: scroll;
+  }
+  .line_T{
+    width: 380px;
+  }
+  .line_TB{
+    width: 380px;
+  }
 }

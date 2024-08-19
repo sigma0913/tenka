@@ -4,6 +4,7 @@ body{
   background-size: 700px;
   background-repeat :repeat;
   background-attachment: fixed;
+  margin: 0%;
 }
 
 .title{
@@ -13,7 +14,7 @@ body{
   margin: 0pt;
   font-size: 60px;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: calc(1vw + 10px);
 }
 
 @media (max-width: 410px){
@@ -30,12 +31,13 @@ body{
 
 .subtitle_right{
   text-align: right;
+  margin-left: 1vw;
 }
 
 .subtitle{
   display: inline-block;
   padding: 0pt;
-  margin: 0pt;
+  margin: 0vw 1vw 0vw 0vw;
   font-family: 'Kokoro','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
   font-size: 30pt;
 }
@@ -49,6 +51,7 @@ body{
 .minititle{
   font-family: 'YuGothic','Yu Gothic', sans-serif;
   font-size: 20px;
+  margin-left: 1vw;
 }
 
 .linkbutton{
@@ -56,7 +59,7 @@ body{
   color: #FFFFFF;
   background-color: #73a456;
   border-radius: 15px;
-  margin-right: 20px;
+  margin-left: 1vw;
   padding: 7px;
   text-decoration: none;
   font-family: "M PLUS Rounded 1c",'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
@@ -65,24 +68,25 @@ body{
   background-color: #62824f;
 }
 
-.reinbow_linkbutton{
+.rainbow_linkbutton{
   display: inline-block;
   color: #FFFFFF;
   background: linear-gradient(to right,#de4141,#e8ac51,#f2e55c,#39a869,#4784bf,#5d5099,#a55b9a);
   border-radius: 15px;
-  margin-right: 20px;
+  margin-left: 1vw;
   padding: 7px;
   text-decoration: none;
   font-family: "M PLUS Rounded 1c",'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
 }
 
-.reinbow_linkbutton:hover{
+.rainbow_linkbutton:hover{
   background:linear-gradient(to right,#c70000,#d28300,#dfd000,#00873c,#005aa0,#181878,#800073);
 }
 
 .box_div{
   background-color: rgba(109,150,156,0.3);
   border-radius: 5px;
+  margin: 0vw 1vw;
 }
 
 .box{
@@ -106,8 +110,9 @@ body{
 }
 
 .table{
-  width: 100%;
+  width: calc(100% - 4vw);
   height: 100%;
+  margin: 0vw 1vw;
 }
 
 .line_T{
@@ -133,5 +138,96 @@ body{
   }
   .line_TB{
     width: 380px;
+  }
+}
+
+footer{
+  width: 100%;
+  height: 120px;
+  background-color: #ad9;
+}
+
+/* モバイル S/M/L ~425px  */
+@media (max-width: 425px){
+  body{
+    background-size: 400px;
+  }
+
+}
+
+
+/* ノートPC 1024px */
+
+@media (min-width: 1024px) and (max-width: 2559px){
+  .title{
+    font-size: 76px;
+  }
+
+  .subtitle{
+    font-size: 64px;
+  }
+
+  .box{
+    font-size: 20px;
+  }
+
+  .linkbutton{
+    font-size: 18px;
+  }
+
+  .rainbow_linkbutton{
+    font-size: 18px;
+  }
+
+  .microtitle{
+    font-size: 26px;
+    width: 108px;
+  }
+
+  .microword{
+    font-size: 26px;
+    padding-left: 26px;
+  }
+}
+
+/* 4K 2560px */
+
+@media (min-width: 2560px) {
+  body{
+    background-size: 1200px;
+  }
+
+  .title{
+    font-size: 135px;
+  }
+
+  .subtitle{
+    font-size: 108px;
+  }
+
+  .box{
+    font-size: 42px;
+  }
+
+  .linkbutton{
+    font-size: 36px;
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .rainbow_linkbutton{
+    font-size: 36px;
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .microtitle{
+    font-size: 45px;
+    width: 180px;
+  }
+
+  .microword{
+    font-size: 45px;
+    padding-left: 45px;
   }
 }

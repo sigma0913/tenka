@@ -7,6 +7,40 @@ body{
   margin: 0%;
 }
 
+header{
+  display: flex;
+  background-color: #FFF;
+  width: 100vw;
+  position: fixed;
+  align-items: center;
+  height: 80px;
+}
+
+nav{
+  height: 80px;
+}
+
+.header_ul{
+  margin: 0px;
+  padding: 0px;
+}
+
+.items{
+  display: inline-block;
+  height: 24px;
+  margin: 8px 0px;
+  padding: 20px 20px;
+  text-decoration: none;
+  border-left: #000 solid 1px;
+  border-right: #000 solid 1px;
+}
+
+header>nav>img{
+  display: inline-block;
+  height: 60px;
+  margin: 10px 20px;
+}
+
 .title{
   display: inline-block;
   padding: 0pt;
@@ -15,6 +49,7 @@ body{
   font-size: 60px;
   font-weight: bold;
   margin-left: calc(1vw + 10px);
+  margin-top: 74px;
 }
 
 @media (max-width: 410px){

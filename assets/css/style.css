@@ -20,6 +20,18 @@ nav{
   height: 80px;
 }
 
+#infobutton{
+  display: none;
+  height: 40px;
+  vertical-align: middle;
+  padding: 0px 10px;
+}
+@media (max-width: 792px) {
+  #infobutton{
+    display: inline-block;
+  }
+}
+
 .header_ul{
   margin: 0px;
   padding: 0px;

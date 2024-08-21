@@ -9,30 +9,61 @@ body{
 
 header{
   display: flex;
-  background-color: #FFF;
+  background-color: #ccc;
   width: 100vw;
   position: fixed;
   align-items: center;
   height: 80px;
 }
 
+a{
+  text-decoration: none;
+  color: #F88;
+}
+
 nav{
+  margin-left: 10px;
   height: 80px;
 }
 
 #infobutton{
   display: none;
   height: 40px;
-  vertical-align: middle;
-  padding: 0px 10px;
+  margin: 20px 0px;
+  padding: 0px 20px;
 }
-@media (max-width: 792px) {
+
+#infobutton_out{
+  position: fixed;
+  width: 40px;
+  margin: 20px;
+}
+
+.hide{
+  display: inline-block;
+}
+
+@media (max-width: 792px){
   #infobutton{
-    display: inline-block;
+    display: flex;
+  }
+  ul{
+    color: #000;
+  }
+  .hidden{
+    display: none;
+  }
+  .big{
+    height: 250px;
+  }
+}
+@media (max-width: 353px) {
+  .big{
+    height: 320px;
   }
 }
 
-.header_ul{
+ul{
   margin: 0px;
   padding: 0px;
 }
